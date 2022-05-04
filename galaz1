@@ -21,3 +21,4 @@ else:
 print("Pobieramy ostatni element z listy: ")
 print(lista.pop())
 print(lista)
+XXX
