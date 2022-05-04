@@ -1,0 +1,23 @@
+print()
+e = int(input("Którą liczbę usunąć? "))
+lista.remove(e)
+print(lista)
+
+print("Wstawianie elementów do listy")
+a, i = eval(input("Podaj element i indeks oddzielone przecinkiem: "))
+lista.insert(i, a)
+print(lista)
+
+print("Wyszukiwanie i zliczanie elementu w liście")
+e = int(input("Podaj liczbę: "))
+print("Liczba wystąpień: ")
+print(lista.count(e))
+print("Indeks pierwszego wystąpienia: ")
+if lista.count(e):
+    print(lista.index(e))
+else:
+    print("Brak elementu w liście")
+
+print("Pobieramy ostatni element z listy: ")
+print(lista.pop())
+print(lista)
