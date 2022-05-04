@@ -1,0 +1,29 @@
+! /usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+from random import randint
+
+ile = int(input("Ile liczb wylosować? "))
+lista = []  # pusta lista
+for i in range(0, ile):
+    lista.append(randint(0, 100))
+print(lista)
+
+print("Dodawanie elementów na końcu listy")
+for i in range(0, 3):
+    liczba = int(input("Podaj liczbę: "))
+    lista.append(liczba)
+print(lista)
+
+print("Zawartość listy ([indeks] wartość):")
+for i, v in enumerate(lista):
+    print("[", i, "]", v)
+
+print("Elementy w odwróconym porządku:")
+for e in reversed(lista):
+    print(e, end=" ")
+
+print()
+print("Elementy posortowane rosnąco:")
+for e in sorted(lista):
+    print(e, end=" ")
